@@ -1,4 +1,5 @@
 import React from "react";
+import { checkPropTypes } from "prop-types";
 //components
 import Thumb from "../Thumb";
 //config
@@ -38,4 +39,7 @@ const MovieInfo = ({movie}) =>(
     </Wrapper>
 );
 
+MovieInfo.checkPropTypes = {
+    movie : checkPropTypes.object
+}
 export default MovieInfo;
